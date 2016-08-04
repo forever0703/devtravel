@@ -31,35 +31,10 @@
 </head>
 <body>
 		 
+<%@ include file="/module/header.jsp" %>
 
 
-<div id="header-wrapper">
-	<div id="header" class="container">
-		<div id="logo">
-			<h1><a href="#">Flower Clusters</a></h1>
-		</div>
-		<div id="menu">
-			<ul>
-				<li><a href="#" accesskey="1" title="">전체메뉴</a></li>
-				<li><a href="#" accesskey="2" title="">여행사</a></li>
-				<li><a href="#" accesskey="3" title="">상품리스트</a></li>
-				<li><a href="#" accesskey="4" title="">회원수기</a></li>
-				<li><a href="#" accesskey="5" title="">로그인</a></li>
-				<li><a href="#" accesskey="6" title="">회원가입</a></li>
-			</ul>
-		</div>
-	</div>
-</div>
-<div id="featured-wrapper">
-	<div id="featured" class="container">
-		<div class="box box1"><a href="#" class="image image-full"><img src="images/pic02.jpg" alt="" /></a></div>
-		<div class="box box2"><a href="#" class="image image-full"><img src="images/pic03.jpg" alt="" /></a></div>
-		<div class="box box3"><a href="#" class="image image-full"><img src="images/pic04.jpg" alt="" /></a></div>
-		<div class="box box4"><a href="#" class="image image-full"><img src="images/pic05.jpg" alt="" /></a></div>
-		<div class="box box5"><a href="#" class="image image-full"><img src="images/pic06.jpg" alt="" /></a></div>
-		<div class="box box6"><a href="#" class="image image-full"><img src="images/pic07.jpg" alt="" /></a></div>
-	</div>
-</div>
+
 <div id="page" class="container" style="margin:0 auto;">
 	<div id="content" style="margin:0 auto; clear:both;">
 		<form action="<%= request.getContextPath() %>/minsert/m_insert_pro.jsp" method="post">
