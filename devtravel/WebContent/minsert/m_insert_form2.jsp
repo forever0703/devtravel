@@ -15,7 +15,7 @@
 <script type="text/javascript">
 	$(document).ready(function(){
 		
-		$('#Btn').click(function(){
+		$('#addBtn').click(function(){
 			
 			$('form').submit();
 			
@@ -25,8 +25,7 @@
 </script>
 <style>
 	div{padding:5px 0;}
-	/* input[type="text"]{width:200px; height:50px;}
-	input[type="password"]{width:200px; height:50px;} */
+	input[type="text"]{width:200px; height:50px;}
 </style>
 </head>
 <body>
@@ -71,36 +70,26 @@
 			<td><label for="id">아이디 : </label></td>
 			<td><input id="id" name="id" type="text" size="20"></td>
 		</tr>
-		<tr>
-			<td><label for="pw">비밀번호 : </label></td>
-			<td><input id="pw" name="pw" type="password" size="20"></td>
-		</tr>
-			<tr>
-			<td><label for="name">이름 : </label></td>
-			<td><input id="name" name="name" type="text" size="20"></td>
-		</tr>
-		<tr>
-			<td><label for="level">권한 : </label></td>
-			<td><input id="level" name="level" type="text" size="20"></td>
-		</tr>
-		<tr>
-			<td><label for="gender">성별 : </label></td>
-			<td><input id="gender" name="gender" type="text" size="20"></td>
-		</tr>
-		<tr>
-			<td><label for="ph">전화번호 : </label></td>
-			<td><input id="ph" name="ph" type="text" size="20"></td>
-		</tr>
-		<tr>
-			<td><label for="add">주소 : </label></td>
-			<td><input id="add" name="add" type="text" size="20"></td>
-		</tr>
-		<tr>
-			<td><input id="Btn" name="Btn" type="submit" size="20" value="입력버튼"></td>
-		</tr>
+		
+			
+			<div>비번 
+				<input id="pw" name="pw" type="password" size="20">
+			</div>
+			<div>권한 
+				<input id="level" name="level" type="text" size="20">
+			</div>
+			<div>전화번호 
+				<input id="ph" name="ph" type="text" size="20">
+			</div>
+			<div>주소 
+				<input id="add" name="add" type="text" size="60">
+			</div>
+			<div>
+				<input id="addBtn" name="addBtn" type="button" value="저장">
+			</div>
+	</div>
+	</div>
 	</table>
 	</form>
-	</div>
-	</div>
 </body>
 </html>

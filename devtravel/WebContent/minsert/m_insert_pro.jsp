@@ -28,16 +28,16 @@
 	
 	Class.forName("com.mysql.jdbc.Driver");
 	try{
-		String jdbcDriver = "jdbc:mysql://localhost:3306/devtravel?" +
+		String jdbcDriver = "jdbc:mysql://localhost:3306/devtravel1?" +
 				"useUnicode=true&characterEncoding=euckr";
-		String dbUser = "dev21tr";
-		String dbPass = "dbpw09yji";
+		String dbUser = "devtrid";
+		String dbPass = "devtrpw";
 		conn = DriverManager.getConnection(jdbcDriver, dbUser, dbPass);
 		System.out.println(conn + "<-- conn");
 		System.out.println(conn.getClass() + "<-- conn.getClass()");
 		pstmt = conn.prepareStatement(
-				"INSERT INTO tb_member VALUES (?, ?, ?, ?, ?,?,?)");
-		System.out.println(pstmt + "<-- pstmt 1");
+				"insert into user values(?,?,?,?,?,?,?);");
+		System.out.println(pstmt + "<-- pstmt ");
 		System.out.println(pstmt.getClass() + "<-- pstmt.getClass() 1");
 
 		pstmt.setString(1, user_id);
@@ -48,7 +48,7 @@
 		pstmt.setString(6, user_ph);
 		pstmt.setString(7, user_add);
 		
-		System.out.println(pstmt + "<-- pstmt 2");
+		System.out.println(pstmt + "<-- pstmt2 ");
 		
 
 		pstmt.executeUpdate();
