@@ -102,5 +102,6 @@
 	</form>
 	</div>
 	</div>
+	<%@ include file="/module/footer-wrapper.jsp" %>
 </body>
 </html>

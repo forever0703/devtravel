@@ -6,7 +6,6 @@
 <%@ page import = "java.sql.PreparedStatement" %>
 <%@ page import = "java.sql.ResultSet" %>
 <%@ page import = "java.sql.SQLException" %>
-
 <%@ include file="/msearch/m_search_form.jsp" %>
 회원 리스트 <br>
 <table width="100%" border="1">
@@ -77,3 +76,4 @@ try{
 		if (conn != null) try { conn.close(); } catch(SQLException ex) {}
 	}
 %>	
+</table>

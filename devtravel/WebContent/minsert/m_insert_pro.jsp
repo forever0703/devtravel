@@ -53,7 +53,7 @@
 
 		pstmt.executeUpdate();
 
-response.sendRedirect(request.getContextPath()+"/user/user_list.jsp");
+	response.sendRedirect(request.getContextPath()+"/user/user_list.jsp");
 	
 	}finally{
 	

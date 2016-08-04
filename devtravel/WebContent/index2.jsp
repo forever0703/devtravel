@@ -1,4 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <!--
 Design by TEMPLATED
 http://templated.co
@@ -25,6 +27,23 @@ Released   : 20130612
 </head>
 <body>
 
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><a href="#">별빛이야기</a></h1>
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="javascript:void(0)" accesskey="1" title="">전체메뉴</a></li>
+				<li><a href="#" accesskey="2" title="">여행사</a></li>
+				<li><a href="#" accesskey="3" title="">상품리스트</a></li>
+				<li><a href="#" accesskey="4" title="">회원수기</a></li>
+				<li><a href="#" accesskey="5" title="">로그인</a></li>
+				<li><a href="<%= request.getContextPath() %>/minsert/m_insert_form.jsp">회원가입</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
 <div id="featured-wrapper">
 	<div id="featured" class="container">
 		<div class="box box1"><a href="#" class="image image-full"><img src="images/pic02.jpg" alt="" /></a></div>

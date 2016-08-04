@@ -26,114 +26,18 @@ Released   : 20130612
 
 </head>
 <body>
-<div id="header-wrapper">
-	<div id="header" class="container">
-		<div id="logo">
-			<h1><a href="#">별빛이야기</a></h1>
-		</div>
-		<div id="menu">
-			<ul>
-				<li><a href="javascript:void(0)" accesskey="1" title="">전체메뉴</a></li>
-				<li><a href="#" accesskey="2" title="">여행사</a></li>
-				<li><a href="#" accesskey="3" title="">상품리스트</a></li>
-				<li><a href="#" accesskey="4" title="">회원수기</a></li>
-				<li><a href="#" accesskey="5" title="">로그인</a></li>
-				<li><a href="<%= request.getContextPath() %>/minsert/m_insert_form.jsp">회원가입</a></li>
-			</ul>
-		</div>
-	</div>
-</div>
-<div id="featured-wrapper">
-	<div id="featured" class="container">
-		<div class="box box1"><a href="#" class="image image-full"><img src="images/pic02.jpg" alt="" /></a></div>
-		<div class="box box2"><a href="#" class="image image-full"><img src="images/pic03.jpg" alt="" /></a></div>
-		<div class="box box3"><a href="#" class="image image-full"><img src="images/pic04.jpg" alt="" /></a></div>
-		<div class="box box4"><a href="#" class="image image-full"><img src="images/pic05.jpg" alt="" /></a></div>
-		<div class="box box5"><a href="#" class="image image-full"><img src="images/pic06.jpg" alt="" /></a></div>
-		<div class="box box6"><a href="#" class="image image-full"><img src="images/pic07.jpg" alt="" /></a></div>
-	</div>
-</div>
-<div id="page" class="container">
-	<div id="content">
-		<div class="title">
-			<h2>Integer sit amet aliquet</h2>
-			<span class="byline">Phasellus nec erat sit amet nibh pellentesque congue</span> </div>
-		<a class="image image-full"><img src="images/pic01.jpg" alt="" /></a>
-		<p>This is <strong>FlowerClusters</strong>, a free, fully standards-compliant CSS template designed by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>. The photos in this template are from <a href="http://fotogrph.com/"> Fotogrph</a>. This free template is released under the <a href="http://templated.co/license">Creative Commons Attribution</a> license, so you're pretty much free to do whatever you want with it (even use it commercially) provided you give us credit for it. Have fun :) </p>
-		<p>Consectetuer adipiscing elit. Nam pede erat, porta eu, lobortis eget, tempus et, tellus. Etiam neque. Vivamus consequat lorem at nisl. Nullam non wisi a sem semper eleifend. Donec mattis libero eget urna. Duis pretium velit ac mauris. Proin eu wisi suscipit nulla suscipit interdum. Aenean lectus lorem, imperdiet at, ultrices eget, ornare et, wisi. Pellentesque adipiscing purus ac magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.  Nullam non wisi a sem semper eleifend. Donec mattis libero eget urna. Nullam non wisi a sem semper eleifend. Donec mattis libero eget urna. Consectetuer adipiscing elit. </p>
-	</div>
-	<div id="sidebar">
-		<div class="box1">
-			<div class="title">
-				<h2>Mauris vulputate</h2>
-			</div>
-			<ul class="style1">
-				<li><a href="#">Semper mod quis eget mi dolore</a></li>
-				<li><a href="#">Quam turpis feugiat sit dolor</a></li>
-				<li><a href="#">Amet ornare in hendrerit in lectus</a></li>
-				<li><a href="#">Consequat etiam lorem phasellus</a></li>
-				<li><a href="#">Amet turpis, feugiat et sit amet</a></li>
-			</ul>
-		</div>
-		<div class="box2">
-			<div class="title">
-				<h2>Integer gravida</h2>
-			</div>
-			<ul class="style1">
-				<li><a href="#">Amet turpis, feugiat et sit amet</a></li>
-				<li><a href="#">Ornare in hendrerit in lectus</a></li>
-				<li><a href="#">Semper mod quis eget mi dolore</a></li>
-				<li><a href="#">Quam turpis feugiat sit dolor</a></li>
-				<li><a href="#">Amet ornare in hendrerit in lectus</a></li>
-				<li><a href="#">Consequat etiam lorem phasellus</a></li>
-			</ul>
-		</div>
-	</div>
-</div>
-<div id="footer-wrapper">
-	<div id="footer" class="container">
-		<div id="box1">
-			<div class="title">
-				<h2>Latest Post</h2>
-			</div>
-			<ul class="style1">
-				<li><a href="#">Semper mod quis eget mi dolore</a></li>
-				<li><a href="#">Quam turpis feugiat sit dolor</a></li>
-				<li><a href="#">Amet ornare in hendrerit in lectus</a></li>
-				<li><a href="#">Consequat etiam lorem phasellus</a></li>
-				<li><a href="#">Amet turpis, feugiat et sit amet</a></li>
-				<li><a href="#">Semper mod quisturpis nisi</a></li>
-			</ul>
-		</div>
-		<div id="box2">
-			<div class="title">
-				<h2>Popular Links</h2>
-			</div>
-			<ul class="style1">
-				<li><a href="#">Semper mod quis eget mi dolore</a></li>
-				<li><a href="#">Quam turpis feugiat sit dolor</a></li>
-				<li><a href="#">Amet ornare in hendrerit in lectus</a></li>
-				<li><a href="#">Consequat etiam lorem phasellus</a></li>
-				<li><a href="#">Amet turpis, feugiat et sit amet</a></li>
-				<li><a href="#">Semper mod quisturpis nisi</a></li>
-			</ul>
-		</div>
-		<div id="box3">
-			<div class="title">
-				<h2>Follow Us</h2>
-			</div>
-			<ul class="contact">
-				<li><a href="#" class="icon icon-twitter"><span>Twitter</span></a></li>
-				<li><a href="#" class="icon icon-facebook"><span>Facebook</span></a></li>
-				<li><a href="#" class="icon icon-dribbble"><span>Dribbble</span></a></li>
-				<li><a href="#" class="icon icon-tumblr"><span>Tumblr</span></a></li>
-				<li><a href="#" class="icon icon-rss"><span>Pinterest</span></a></li>
-			</ul>
-		</div>
-	</div>
-</div>
-<div id="copyright" class="container">
-	<p>&copy; Untitled. All rights reserved. | Photos by <a href="http://fotogrph.com/">Fotogrph</a> | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
-</div>
+
+<%@ include file="/module/header.jsp" %>
+
+<%@ include file="/module/page.jsp" %>
+
+<%@ include file="/module/footer-wrapper.jsp" %>
+
+
+
+
+	
+
+
 </body>
 </html>
