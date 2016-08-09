@@ -11,20 +11,20 @@ request.setCharacterEncoding("euc-kr");
 Connection conn = null;
 PreparedStatement pstmt = null;
 //화면에서 입력자료 받아서 콘솔창에 출력 시작
-	String user_id = request.getParameter("id");
-	String user_pw = request.getParameter("pw");
-	String user_name = request.getParameter("name");
-	String user_level = request.getParameter("level");
-	String user_gender = request.getParameter("gender");
-	String user_ph = request.getParameter("ph");
-	String user_add = request.getParameter("add");
-	System.out.println(user_id + "<--id/minsert/m_insert_pro.jsp");
-	System.out.println(user_pw + "<--pw/minsert/m_insert_pro.jsp");
-	System.out.println(user_name + "<--name/minsert/m_insert_pro.jsp");
-	System.out.println(user_level + "<--level/minsert/m_insert_pro.jsp");
-	System.out.println(user_gender + "<--gender/minsert/m_insert_pro.jsp");
-	System.out.println(user_ph + "<--ph/minsert/m_insert_pro.jsp");
-	System.out.println(user_add + "<--add/minsert/m_insert_pro.jsp");
+	String user_id = request.getParameter("user_id");
+	String user_pw = request.getParameter("user_pw");
+	String user_name = request.getParameter("user_name");
+	String user_level = request.getParameter("user_level");
+	String user_gender = request.getParameter("user_gender");
+	String user_ph = request.getParameter("user_ph");
+	String user_add = request.getParameter("user_add");
+	System.out.println(user_id + "<--user_id/minsert/m_update_pro.jsp");
+	System.out.println(user_pw + "<--user_pw/minsert/m_update_pro.jsp");
+	System.out.println(user_name + "<--user_name/minsert/m_update_pro.jsp");
+	System.out.println(user_level + "<--user_level/minsert/m_update_pro.jsp");
+	System.out.println(user_gender + "<--user_gender/minsert/m_update_pro.jsp");
+	System.out.println(user_ph + "<--user_ph/minsert/m_update_pro.jsp");
+	System.out.println(user_add + "<--user_add/minsert/m_update_pro.jsp");
 
 Class.forName("com.mysql.jdbc.Driver");
 //01단계 :드라이버 로딩 끝

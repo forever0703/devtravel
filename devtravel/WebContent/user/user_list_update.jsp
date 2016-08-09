@@ -30,7 +30,7 @@ String user_gender = request.getParameter("user_gender");
 String user_ph = request.getParameter("user_ph");
 String user_add = request.getParameter("user_add");
 
-System.out.println(user_id + "<-- u_id");
+System.out.println(user_id + "<-- user_id");
 System.out.println(user_pw + "<-- user_pw");
 System.out.println(user_name + "<-- user_name");
 System.out.println(user_level + "<-- user_level");
