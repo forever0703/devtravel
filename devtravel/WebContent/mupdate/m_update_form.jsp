@@ -92,8 +92,8 @@ try{
 --%>
 		<tr>
 			<td><label for="user_id">아이디 : </label></td>
-			<td><input id="user_id" name="user_id" type="hidden" size="20" value="<%= dbid %>"></td>
-				<%-- <%= dbid %> --%>
+			<td><input id="user_id" name="user_id" type="hidden" size="20" value="<%= dbid %>"><%= dbid %> </td>
+				<%--  <%= dbid %>  --%>
 		</tr>
 		<tr>
 			<td><label for="user_pw">비밀번호 : </label></td>

@@ -4,6 +4,7 @@
 <form action="<%=request.getContextPath()%>/msearch/m_search_list.jsp" method="post">
 	<select name="sk">
 	    <option value="user_id">아이디</option>
+	    <option value="user_pw">비밀번호</option>
 	    <option value="user_level">권한</option>
 	    <option value="user_name">이름</option>
 	    <option value="user_gender">성별</option>

@@ -32,7 +32,7 @@ System.out.println(user_add + "<-- user_add");
 		       회원수정 화면 <br><br>
 <form action="user_list_update.jsp" method="post">
 	아이디 : <input type="text" name="user_id" value="<%= user_id %>" readonly><br>
-	비번 : <input type="text" name="user_pw" value="<%= user_pw %>"><br>
+	비번 : <input type="password" name="user_pw" value="<%= user_pw %>"><br>
 	이름 : <input type="text" name="user_name" value="<%= user_name %>"><br>
 	성별 : <input type="text" name="user_gender" value="<%= user_gender %>"><br>
 	전화번호 : <input type="text" name="user_ph" value="<%= user_ph %>"><br>
