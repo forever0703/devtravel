@@ -50,7 +50,7 @@ try{
 %>
 <script type="text/javascript">
 	alert("로그인성공");
-	location.href = "<%= request.getContextPath() %>/user/index.jsp";
+	location.href = "<%= request.getContextPath() %>/user/loginAction.jsp";
 </script>
 <%		
 		}else{
