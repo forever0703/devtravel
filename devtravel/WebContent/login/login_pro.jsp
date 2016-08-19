@@ -27,7 +27,7 @@ try{
 		conn = DriverManager.getConnection(jdbcDriver, dbUser, dbPass);
 		System.out.println(conn + "<-- conn");
 		System.out.println(conn.getClass() + "<-- conn.getClass()");
-		String sql = "select user_pw,user_level,user_name from user whereuser_id=?";
+		String sql = "select user_pw,user_name ,user_level from user where user_id=?";
 	pstmt = conn.prepareStatement(sql);
 	pstmt.setString(1, user_id);
 	
@@ -35,9 +35,9 @@ try{
 	if(rs.next()){
 		System.out.println("01아이디일치");
 		
-		dbpw = rs.getString("m_pw");
-		dbname = rs.getString("m_name");
-		dblevel = rs.getString("m_level"); 
+		dbpw = rs.getString("user_pw");
+		dbname = rs.getString("user_name");
+		dblevel = rs.getString("user_level"); 
 		
 		if(user_pw.equals(dbpw)){
 			System.out.println("03로그인성공");

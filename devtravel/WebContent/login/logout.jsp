@@ -6,5 +6,5 @@
 %>
 <script type="text/javascript">
 	alert("·Î±×¾Æ¿ô");
-	location.href = "<%= request.getContextPath() %>/user/index.jsp";
+	location.href = "<%= request.getContextPath() %>/user/loginAction.jsp";
 </script>

@@ -14,7 +14,7 @@
 				<li><a href="javascript:void(0)" accesskey="3" title="">상품리스트</a></li>
 				<li><a href="javascript:void(0)" accesskey="4" title="">회원수기</a></li>
 				<li><a href="<%= request.getContextPath() %>/user/loginAction.jsp">로그인</a></li>
-				<li><a href="<%= request.getContextPath() %>/minsert/loginAction.jsp">회원가입</a></li>
+				<li><a href="<%= request.getContextPath() %>/minsert/m_insert_form.jsp">회원가입</a></li>
 			</ul>
 		</div>
 	</div>

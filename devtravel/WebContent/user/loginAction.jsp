@@ -28,14 +28,14 @@ if(S_LEVEL == null){
 
 <%}else{ %>
 <%	if(S_LEVEL.equals("구매자")){ 		%>
-<a href="<%= request.getContextPath() %>/user/user_insert_form.jsp"> 01회원등록 </a>
+<a href="<%= request.getContextPath() %>/minsert/m_insert_form.jsp"> 01회원등록 </a>
 <%-- <a href="<%= request.getContextPath() %>/goods/goods_list.jsp"> 04상품리스트 </a> --%>
 <%	}else if(S_LEVEL.equals("판매자")){ %>
-<a href="<%= request.getContextPath() %>/user/user_insert_form.jsp"> 01회원등록 </a>
+<a href="<%= request.getContextPath() %>/minsert/m_insert_form.jsp"> 01회원등록 </a>
 <%-- <a href="<%= request.getContextPath() %>/goods/goods_insert_form.jsp"> 03상품등록 </a>
 <a href="<%= request.getContextPath() %>/goods/goods_list.jsp"> 04상품리스트 </a>	 --%>
 <%	}else if(S_LEVEL.equals("관리자")){ %>
-<a href="<%= request.getContextPath() %>/user/user_insert_form.jsp"> 01회원등록 </a>
+<a href="<%= request.getContextPath() %>/minsert/m_insert_form.jsp"> 01회원등록 </a>
 <a href="<%= request.getContextPath() %>/user/user_list.jsp"> 02회원리스트 </a>
 <%-- <a href="<%= request.getContextPath() %>/goods/goods_insert_form.jsp"> 03상품등록 </a>
 <a href="<%= request.getContextPath() %>/goods/goods_list.jsp"> 04상품리스트 </a> --%>

@@ -1,12 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link href="../css/default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
 <%@ page import = "java.sql.DriverManager" %>
 <%@ page import = "java.sql.Connection" %>
 <%@ page import = "java.sql.PreparedStatement" %>
 <%@ page import = "java.sql.ResultSet" %>
 <%@ page import = "java.sql.SQLException" %>
+<%@ include file="/module/header.jsp" %>
 <%@ include file="/msearch/m_search_form.jsp" %>
+
+
 회원 리스트 <br>
 <table width="100%" border="1">
 <tr>
@@ -39,7 +47,7 @@ try{
 		pstmt = conn.prepareStatement("select * from user");
 	}else if(sk != null & sv != null){
 		out.println("03 sk sv 둘다 있는 조건");
-		pstmt = conn.prepareStatement("select * from user where "+sk+"=?");
+		pstmt = conn.prepareStatement("select * from user where "+ sk +"= ?");
 		pstmt.setString(1, sv);
 	}
 	out.println("<br>"+pstmt + "<--- pstmt");
@@ -49,12 +57,13 @@ try{
 %>
 		<tr>
 			<td><%= rs.getString("user_id")%></td>
-			<td><%= rs.getString("user_pw")%></td>
 			<td><%= rs.getString("user_level")%></td>
 			<td><%= rs.getString("user_name")%></td>
+			<td><%= rs.getString("user_level")%></td>
 			<td><%= rs.getString("user_gender")%></td>
 			<td><%= rs.getString("user_ph")%></td>
 			<td><%= rs.getString("user_add")%></td>
+		
 			<td>
 <a href="<%= request.getContextPath() %>/mupdate/m_update_form.jsp?send_id=<%= rs.getString("user_id")%>">수정클릭</a>			
 			</td>
@@ -77,3 +86,4 @@ try{
 	}
 %>	
 </table>
+<%@ include file="/module/footer-wrapper.jsp" %> --%>
