@@ -19,7 +19,7 @@ Released   : 20130612
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
-<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../css/default.css" rel="stylesheet" type="text/css" media="all" />
 <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
 
 <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
@@ -27,11 +27,11 @@ Released   : 20130612
 </head>
 <body>
 
-<%@ include file="/module/header.jsp" %>
+<%-- <%@ include file="/module/header.jsp" %> --%>
 
 <%@ include file="/msearch/m_search_list.jsp" %>
 
-<%@ include file="/module/footer-wrapper.jsp" %>
+<%-- <%@ include file="/module/footer-wrapper.jsp" %> --%>
 
 </body>
 </html>
